@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>歯科医院のWEBサイト | ayu's portfolio</title>
+  <meta name="description" content="制作実績の詳細ページです。" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Cherry+Bomb+One&family=Kosugi+Maru&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">ayu’s portfolio</a>
+
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-controls="global-nav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="header__nav" id="global-nav">
+        <ul class="header__navList">
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="index.html#works">WORKS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="workDetailPage">
+    <section class="workDetail">
+      <div class="workDetail__inner">
+        <div class="workDetail__head fade-up">
+          <div class="workDetail__tags">
+            <span>WEBサイト</span>
+            <span>架空</span>
+          </div>
+
+          <h1 class="workDetail__title">歯科医院のWEBサイト</h1>
+          <div class="workDetail__line"></div>
+        </div>
+
+        <div class="workDetail__fv fade-up">
+          <img src="/img/work-detail-mockup-dental.png" alt="歯科医院サイトのモックアップ画像" />
+        </div>
+
+        <div class="workDetail__info">
+          <section class="workDetailBlock fade-up">
+            <h2 class="workDetailBlock__title">
+              <span class="workDetailBlock__dot"></span>
+              概要
+            </h2>
+            <div class="workDetailBlock__text">
+              <p>
+                地域密着型歯科クリニックのWebサイト。<br>
+                ターゲットは30代〜60代の男女。<br>
+                清潔感があり、家族層やシニアも利用できるような安心感あるデザイン。
+              </p>
+            </div>
+          </section>
+
+          <section class="workDetailBlock fade-up">
+            <h2 class="workDetailBlock__title">
+              <span class="workDetailBlock__dot"></span>
+              意識したこと
+            </h2>
+            <div class="workDetailBlock__text">
+              <p>
+                清潔感と安心感を大切にし、初めて来院される方でも不安を感じないデザインを意識しました。
+                白や淡いブルーを基調とした配色で、歯科医院らしい清潔さとやさしい印象を表現しています。
+                また、情報が見やすく整理されるよう余白や文字の大きさに配慮し、幅広い年代の方にも使いやすい構成にしました。
+                さらに、予約導線を分かりやすく配置することで、スムーズに行動へつながるよう工夫しています。
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <section class="workShot fade-up">
+          <div class="workShot__switch" role="tablist" aria-label="表示切り替え">
+            <button class="workShot__button is-active" type="button" data-view="pc" aria-selected="true">
+              PC
+            </button>
+            <button class="workShot__button" type="button" data-view="sp" aria-selected="false">
+              SP
+            </button>
+          </div>
+
+          <div class="workShot__viewer">
+            <div class="workShot__panel is-active" data-panel="pc">
+              <img src="/img/work-detail-dental-pc.png" alt="歯科医院サイトのPC版スクリーンショット" />
+            </div>
+
+            <div class="workShot__panel" data-panel="sp">
+              <img src="/img/work-detail-dental-sp.png" alt="歯科医院サイトのスマートフォン版スクリーンショット" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__nav">
+        <ul class="footer__navList">
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="index.html#works">WORKS</a></li>
+        </ul>
+      </nav>
+      <p class="footer__copy">©Ayumi Inaba All Right Reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico"/>
+  <title>お問い合わせ | ayu's portfolio</title>
+  <meta name="description" content="Webデザイナーayuへのお問い合わせページです。" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Cherry+Bomb+One&family=Kosugi+Maru&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">ayu's portfolio</a>
+
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-controls="global-nav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="header__nav" id="global-nav">
+        <ul class="header__navList">
+          <li><a href="index.html#top">TOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="index.html#works">WORKS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- CONTACT -->
+    <section class="contact section">
+      <div class="section__inner">
+        <div class="contact__head fade-up">
+          <h2 class="sectionTitle">CONTACT</h2>
+          <p class="contact__lead">お問い合わせフォーム</p>
+        </div>
+
+        <div class="contactCard fade-up">
+          <form
+  class="contactForm"
+  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwZjrw7CssCS0sLeo7BNPXmBmorlJsOw61vEbwabvDHsCr2A/formResponse"
+  method="post"
+  target="hidden_iframe"
+  onsubmit="submitted=true;"
+>
+  <div class="contactForm__group">
+    <label for="name" class="contactForm__label">お名前</label>
+    <input
+      type="text"
+      id="name"
+      name="entry.2026104719"
+      class="contactForm__input"
+      placeholder="山田 太郎"
+      required
+    />
+  </div>
+
+  <div class="contactForm__group">
+    <label for="email" class="contactForm__label">メールアドレス</label>
+    <input
+      type="email"
+      id="email"
+      name="entry.156348186"
+      class="contactForm__input"
+      placeholder="example@mail.co.jp"
+      required
+    />
+  </div>
+
+  <div class="contactForm__group">
+    <label for="message" class="contactForm__label">お問い合わせ内容</label>
+    <textarea
+      id="message"
+      name="entry.1618627590"
+      class="contactForm__textarea"
+      placeholder="お問い合わせ内容をお書きください"
+      rows="6"
+      required
+    ></textarea>
+  </div>
+
+  <div class="contactForm__submit">
+    <button type="submit" class="contactForm__btn">送信する</button>
+  </div>
+</form>
+
+<iframe
+  name="hidden_iframe"
+  id="hidden_iframe"
+  style="display:none;"
+  onload="if(submitted){window.location='thanks.html';}"
+></iframe>
+
+<script>
+  let submitted = false;
+</script>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__nav">
+        <ul class="footer__navList">
+          <li><a href="index.html#top">TOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="index.html#works">WORKS</a></li>
+        </ul>
+      </nav>
+      <p class="footer__copy">&copy; 2024 ayu's portfolio</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

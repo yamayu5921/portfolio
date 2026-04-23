@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico"/>
+  <title>ayu's portfolio</title>
+  <meta name="description" content="Ayuのポートフォリオサイトです。" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Cherry+Bomb+One&family=Kosugi+Maru&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">ayu's portfolio</a>
+
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-controls="global-nav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="header__nav" id="global-nav">
+        <ul class="header__navList">
+          <li><a href="#top">TOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__bg">
+        <img src="/img/mv.png" alt="ハートが散りばめられたメインビジュアル" />
+      </div>
+
+      <div class="hero__content fade-up">
+        <h1 class="hero__title">AYU</h1>
+        <p class="hero__job">Web Designer</p>
+        <p class="hero__copy">想いを届けるデザイン。</p>
+      </div>
+
+      <div class="hero__overlay"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="section__inner">
+        <div class="aboutCard fade-up">
+          <h2 class="sectionTitle">ABOUT ME</h2>
+
+          <div class="aboutCard__body">
+            <div class="aboutCard__image">
+              <img src="/img/about.png" alt="稲葉あゆみのイラスト" />
+            </div>
+
+            <div class="aboutCard__content">
+              <div class="aboutCard__heading">
+                <p class="aboutCard__nameJp">稲葉　あゆみ</p>
+                <p class="aboutCard__nameEn">Inaba Ayumi</p>
+              </div>
+
+              <div class="aboutCard__text">
+                <p>
+                  はじめまして、Webデザイナーのayuです。<br>
+                  静岡県出身。<br>
+                  これまでアパレル・飲食・ホテル業界で約8年勤務し、接客業に携わってきました。<br>
+                  相手の立場になって考えることを大切にしながら、現在はバナー制作・Webサイト制作・LP制作を行っています。<br>
+                  シンプルで伝わりやすく、女性らしいやわらかいデザインが得意です。
+                </p>
+              </div>
+
+              <a href="about.html" class="aboutCard__more">MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section class="works section" id="works">
+      <div class="section__inner">
+        <div class="works__head fade-up">
+          <h2 class="sectionTitle">WORKS</h2>
+          <p class="works__lead">今までの制作物をまとめました</p>
+        </div>
+
+        <!-- WEBSITE -->
+        <div class="worksBlock fade-up">
+          <h3 class="worksBlock__title">WEB SITE</h3>
+          <div class="worksBlock__line"></div>
+
+          <div class="worksGrid worksGrid--website">
+            <article class="workCard">
+              <a href="works-dental-site.html" class="workCard__image">
+                <img src="/img/works.png" alt="歯科医院のサイト制作実績" />
+              </a>
+              <div class="workCard__tags">
+                <span>WEBサイト</span>
+                <span>架空</span>
+              </div>
+              <h4 class="workCard__title">歯科医院のサイト</h4>
+            </article>
+
+            <article class="workCard">
+              <a href="works-cafe-site.html" class="workCard__image">
+                <img src="/img/works-cafe.png" alt="Cafeのサイト制作実績" />
+              </a>
+              <div class="workCard__tags">
+                <span>WEBサイト</span>
+                <span>架空</span>
+              </div>
+              <h4 class="workCard__title">Cafeのサイト</h4>
+            </article>
+
+            <article class="workCard">
+              <a href="works-salon-site.html" class="workCard__image">
+                <img src="/img/works-salon.png" alt="美容院のサイト制作実績" />
+              </a>
+              <div class="workCard__tags">
+                <span>WEBサイト</span>
+                <span>架空</span>
+              </div>
+              <h4 class="workCard__title">美容院のサイト</h4>
+            </article>
+
+            <article class="workCard">
+              <a href="works-seminar-site.html" class="workCard__image">
+                <img src="/img/works-seminar.png" alt="セミナーのLP制作実績" />
+              </a>
+              <div class="workCard__tags">
+                <span>LP</span>
+                <span>架空</span>
+              </div>
+              <h4 class="workCard__title">セミナーのLP</h4>
+            </article>
+          </div>
+        </div>
+
+        <!-- BANNER -->
+        <div class="worksBlock fade-up">
+          <h3 class="worksBlock__title">BANNER</h3>
+          <div class="worksBlock__line"></div>
+
+          <div class="worksGrid worksGrid--banner">
+            <article class="workCard workCard--banner">
+              <a href="works-yoga-banner.html" class="workCard__image">
+                <img src="/img/worksbanner.png" alt="ヨガ教室のバナー制作実績" />
+              </a>
+              <div class="workCard__tags">
+                <span>自主制作</span>
+                <span>架空</span>
+              </div>
+              <h4 class="workCard__title">ヨガ教室のバナー</h4>
+            </article>
+
+            <article class="workCard workCard--banner">
+              <a href="works-drink-banner.html" class="workCard__image">
+                <img src="/img/worksbanner-drink.png" alt="ドリンクのバナー制作実績" />
+              </a>
+              <div class="workCard__tags">
+                <span>自主制作</span>
+                <span>架空</span>
+              </div>
+              <h4 class="workCard__title">ドリンクのバナー</h4>
+            </article>
+            
+            <article class="workCard workCard--banner">
+              <a href="works-christmas-banner.html" class="workCard__image">
+                <img src="/img/worksbanner-Christmas.jpg" alt="クリスマスのバナー制作実績" />
+              </a>
+              <div class="workCard__tags">
+                <span>自主制作</span>
+                <span>架空</span>
+              </div>
+              <h4 class="workCard__title">クリスマスセールのバナー</h4>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__nav">
+        <ul class="footer__navList">
+          <li><a href="#top">TOP</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#works">WORKS</a></li>
+        </ul>
+      </nav>
+      <p class="footer__copy">©Ayumi Inaba All Right Reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
