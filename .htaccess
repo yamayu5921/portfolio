@@ -1,0 +1,7 @@
+# RewriteEngineを有効にする
+RewriteEngine On
+
+# .html 拡張子を省略してアクセスできるようにする
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/.]+)$ $1.html [L]
